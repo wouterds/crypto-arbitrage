@@ -22,7 +22,7 @@ const start = () => {
     bitfinex = bitfinex === max ? chalk.green(bitfinex.toFixed(2)) : (bitfinex === min ? chalk.red(bitfinex.toFixed(2)) : chalk.whiteBright(bitfinex.toFixed(2)));
 
     console.log(`${chalk.white('Binance:')} ${binance} ${chalk.white('Bitfinex:')} ${bitfinex} - ${chalk.white('arbitrage:')} ${chalk.yellowBright(arb.toFixed(2))}`);
-  }, 1000);
+  }, 250);
 
   process.stdin.resume();
 };
