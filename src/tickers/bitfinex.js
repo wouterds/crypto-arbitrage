@@ -27,10 +27,10 @@ class BitfinexTicker {
 
   get price() {
     if (!this._price) {
-      return '--';
+      return -1;
     }
 
-    return this._price.toFixed(2);
+    return this._price;
   }
 }
 
